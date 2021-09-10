@@ -1,11 +1,38 @@
-dividir(10, 0)
-    .then(res => {
-        console.log('resultado:' + res)
-    })
+function mostrarLetras(palabra, termine, id, demora = 1000) {
+  let i = 0
+  const timer = setInterval(() => {
+    if (i < palabra.length) {
+      console.log(palabra[i] + ' ' + id)
+      i++
+    } else {
+      clearInterval(timer)
+      termine()
+    }
+  }, demora)
+}
 
-    .catch(error => {
-        console.log('error:' + error)
-    })
+const fin = () => console.log('terminé')
+
+// setTimeout(() => { mostrarLetras('hola', fin, 1); }, 0)
+// setTimeout(() => { mostrarLetras('hola', fin, 2); }, 250)
+// setTimeout(() => { mostrarLetras('hola', fin, 3); }, 500)
+// setTimeout(() => { mostrarLetras('hola', fin, 4); }, 1200)
+
+mostrarLetras('hola', fin, 1, 400)
+mostrarLetras('hola', fin, 2, 600)
+mostrarLetras('hola', fin, 3, 800)
+mostrarLetras('hola', fin, 4, 1000)
+
+// -----------------------------------------------
+
+// dividir(10, 0)
+//     .then(res => {
+//         console.log('resultado:' + res)
+//     })
+
+//     .catch(error => {
+//         console.log('error:' + error)
+//     })
 
 // -----------------------------------------------------
 
