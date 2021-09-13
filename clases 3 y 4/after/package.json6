@@ -1,0 +1,11 @@
+{
+  "name": "lunes226",
+  "version": "1.0.0",
+  "description": "material del after del lunes de la clase 3 y 4",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "drmaquino",
+  "license": "ISC"
+}
