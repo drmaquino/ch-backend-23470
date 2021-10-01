@@ -7,7 +7,7 @@ app.engine('hbs', exphbs({
   extname: 'hbs',
   defaultLayout: 'index.hbs'
 }))
-
+// app.set('view engine', 'handlebars')
 app.set('views', './views')
 
 app.get('/', (req, res) => {
