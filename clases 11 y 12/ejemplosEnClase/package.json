@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "clases-11-y-12",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
