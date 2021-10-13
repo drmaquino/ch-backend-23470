@@ -1,0 +1,10 @@
+[
+    {
+        "nombre":"marian",
+        "mensaje": "hola mundo"
+    },
+    {
+        "nombre":"lola",
+        "mensaje": "hola mundillo"
+    }
+]
