@@ -26,8 +26,8 @@ function buscarMensajes() {
 // }
 
 // function armarHTML(plantilla, mensajes) {
-//     const template = Handlebars.compile(plantilla);
-//     const html = template({ mensajes })
+//     const render = Handlebars.compile(plantilla);
+//     const html = render({ mensajes })
 //     return html
 // }
 
@@ -40,7 +40,7 @@ function buscarPlantilla() {
 }
 
 function armarHTML(plantilla, mensajes) {
-    const template = ejs.compile(plantilla);
-    const html = template({ mensajes })
+    const render = ejs.compile(plantilla);
+    const html = render({ mensajes })
     return html
 }
