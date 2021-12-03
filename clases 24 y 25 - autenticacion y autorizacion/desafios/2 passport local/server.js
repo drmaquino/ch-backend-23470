@@ -116,15 +116,19 @@ app.get('/faillogin', (req, res) => {
   res.render('login-error');
 })
 
-// DATOS
-app.get('/datos', isAuth, (req, res) => {
+function contarVisitas(req, res, next) {
   if (!req.user.contador) {
     req.user.contador = 0
   }
   req.user.contador++
+  next()
+}
 
+// DATOS
+app.get('/datos', isAuth, contarVisitas, (req, res) => {
   res.render('datos', {
-    datos: usuarios.find(usuario => usuario.username == req.user.username),
+    // datos: usuarios.find(usuario => usuario.username == req.user.username),
+    datos: req.user,
     contador: req.user.contador
   });
 })
