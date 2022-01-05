@@ -1,0 +1,3 @@
+{"level":30,"time":1641416485418,"pid":61992,"hostname":"Leila","msg":"Servidor express escuchando en el puerto 8080"}
+{"level":40,"time":1641416490847,"pid":61992,"hostname":"Leila","msg":"Ruta GET / no implementada"}
+{"level":40,"time":1641416490896,"pid":61992,"hostname":"Leila","msg":"Ruta GET /favicon.ico no implementada"}
